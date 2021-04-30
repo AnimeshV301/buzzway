@@ -153,6 +153,38 @@
             padding: 5px 20px;
         }
 
+        .animation {
+            width: 200px;
+            animation-name: fadeInTopRight;
+            visibility: visible;
+            animation-duration: 10s;
+            animation-timing-function: ease-in;
+
+
+        }
+
+        @keyframes fadeInTopRight {
+            0% {
+                right: 0px;
+
+            }
+
+            25% {
+
+                right: 300px;
+            }
+
+            75% {
+                right: 0px;
+            }
+
+            100% {
+                left: 60px;
+            }
+
+
+        }
+
         @media only screen and (max-width: 600px) {
             .section1txt {
                 display: none;
@@ -297,7 +329,7 @@
                 <h1 class="section1txt txt2">In 3 Easy Steps</h1>
                 <h4 class="txt3">Relaible & Safe Transportation</h4>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6  animation">
                 <div><img class="section1img" src="./images/images.webp" alt=""></div>
             </div>
         </div>
